@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>{{ title }}</h1>
+        </header>
+        <main>
+            <article>
+                <p><strong>DOI:</strong> {{ doi }}</p>
+                <p><strong>Authors:</strong> {{ authors }}</p>
+                <p><strong>Corresponding Author:</strong> {{ corresponding_author }}</p>
+                <p><strong>Institution:</strong> {{ institution }}</p>
+                <p><strong>Date:</strong> {{ date }}</p>
+                <p><strong>Version:</strong> {{ version }}</p>
+                <p><strong>License:</strong> {{ license }}</p>
+                <p><strong>Category:</strong> {{ category }}</p>
+                <h2>Abstract</h2>
+                <p>{{ text }}</p>
+                <!-- Link to the actual document using DOI -->
+                <a href="https://doi.org/{{ doi }}" target="_blank" class="doi-link">View Full Document</a>
+            </article>
+            <a href="/" class="btn" onclick="stopRLSimulation({{ document_id }})">Back to Search</a>
+        </main>
+        <footer>
+            <p>Powered by BERT, FAISS, and Flask</p>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

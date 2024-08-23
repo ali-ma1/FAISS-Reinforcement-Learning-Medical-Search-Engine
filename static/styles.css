@@ -1,0 +1,144 @@
+/* General body styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the main content */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Search bar styling */
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-box input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Result item styling */
+.result {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.result h3 a {
+    font-size: 1.5em;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.result h3 a:hover {
+    color: #0056b3;
+}
+
+.result p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Main article styling */
+main article {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #495057;
+}
+
+/* Additional styles for document details */
+article p {
+    margin-bottom: 15px;
+}
+
+article h2 {
+    margin-top: 30px;
+    font-size: 1.8em;
+    color: #343a40;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Link for DOI */
+.doi-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.doi-link:hover {
+    background-color: #0056b3;
+}
+
+/* Back button styling */
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+}
